@@ -39,11 +39,11 @@ Yo trabaje con un entorno virtual
 
 3. Agregar el archivo ".env" en la raiz del proyecto, con este template:
    SECRET_KEY=FLASKPASS
-   PGSQL_HOST=your_localhost
-   PGSQL_USER=your_user
-   PGSQL_PASSWORD=your_password
+   PGSQL_HOST=dpg-chlde4rhp8uej74gilog-a.oregon-postgres.render.com
+   PGSQL_USER=diplomado_user
+   PGSQL_PASSWORD=HAAWrgiZfbHBho0tglXHpj8hGcIsTczO
    PGSQL_DATABASE=diplomado
-   PGSQL_PORT=your_port
+   PGSQL_PORT=5432
 
 4. Actualizar en el archivo ".env" los nuevos datos para la conexion con postgres
 5. Abrir la terminal y crear un entorno virtual para python para evitar que las dependencias se instalen de manera global
