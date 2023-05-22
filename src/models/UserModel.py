@@ -97,11 +97,8 @@ class UserModel():
                 cursor.execute(
                     "SELECT AVG(EXTRACT(YEAR FROM AGE(NOW(), fecha_nacimiento))) AS promedio_edades FROM usuario ")
                 row = cursor.fetchone()
-                print(row[0])
                 if row != None:
                     average_age = {'promedioEdad': row[0]}
-                    print(average_age)
-
             connection.close()
             return average_age
         except Exception as ex:

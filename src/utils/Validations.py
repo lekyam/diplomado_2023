@@ -13,7 +13,6 @@ class Validations():
     @classmethod
     def is_valid_date(self, date_string):
         try:
-            print(date_string)
             parse(date_string)
             return True
         except ValueError:
