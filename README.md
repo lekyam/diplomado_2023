@@ -1,9 +1,5 @@
 # diplomado_2023
 
-## Database Queries
-
-Yo trabaje con un entorno virtual
-
 ## Pasos para levantar el proyecto
 
 1. Descargar el proyecto
