@@ -33,8 +33,7 @@
   INSERT INTO public.usuario (cedula_identidad, nombre, primer_apellido, segundo_apellido, fecha_nacimiento) VALUES ('6789012345', 'Sara', 'Ortega', 'Rojas', '1998-04-07');
   INSERT INTO public.usuario (cedula_identidad, nombre, primer_apellido, segundo_apellido, fecha_nacimiento) VALUES ('9359209', 'Maykel', 'Flores', 'Rodriguez', '2000-01-19');
 
-3. Agregar el archivo ".env" en la raiz del proyecto, con este template:
-   SECRET_KEY=FLASKPASS
+3. Agregar el archivo ".env" en la raiz del proyecto, con este template (deployed db config):
    PGSQL_HOST=dpg-chlde4rhp8uej74gilog-a.oregon-postgres.render.com
    PGSQL_USER=diplomado_user
    PGSQL_PASSWORD=HAAWrgiZfbHBho0tglXHpj8hGcIsTczO
