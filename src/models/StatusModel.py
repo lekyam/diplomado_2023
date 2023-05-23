@@ -1,4 +1,4 @@
-from src.models.entities.Status import Status
+from .entities.Status import Status
 
 
 class StatusModel:

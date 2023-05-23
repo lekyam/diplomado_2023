@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from src.models.StatusModel import StatusModel
+from models.StatusModel import StatusModel
 from flask_restx import Namespace, Resource
 main = Blueprint('status-blueprint', __name__)
 status_namespace = Namespace(
