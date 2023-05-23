@@ -16,12 +16,15 @@ def page_not_found(error):
     return render_template('NotFound.html'), 404
 
 
-if __name__ == '__main__':
-    app.config.from_object(config['development'])
-    api.add_namespace(User.user_namespace)
-    api.add_namespace(Status.status_namespace)
-    app.register_blueprint(User.main, url_prefix='/users')
-    app.register_blueprint(Status.main, url_prefix='/status')
+app.config.from_object(config['development'])
+api.add_namespace(User.user_namespace)
+api.add_namespace(Status.status_namespace)
+app.register_blueprint(User.main, url_prefix='/users')
+app.register_blueprint(Status.main, url_prefix='/status')
 
-    app.register_error_handler(404, page_not_found)
-    app.run()
+app.register_error_handler(404, page_not_found)
+
+
+application = app
+if __name__ == '__main__':
+    application.run()
