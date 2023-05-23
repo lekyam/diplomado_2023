@@ -1,8 +1,8 @@
 from flask import Blueprint, jsonify, request
 from flask_restx import Namespace, Resource, fields
-from models.UserModel import UserModel
-from utils.Validations import Validations
-from models.entities.User import User
+from src.models.UserModel import UserModel
+from src.utils.Validations import Validations
+from src.models.entities.User import User
 main = Blueprint('user-blueprint', __name__)
 
 user_namespace = Namespace(
