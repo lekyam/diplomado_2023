@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from flask_cors import CORS
 from flask_restx import Api
-from routes import User, Status
+from src.routes import User, Status
 
 
 app = Flask(__name__)
