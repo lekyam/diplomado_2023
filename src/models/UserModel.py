@@ -1,5 +1,5 @@
-from database.database import get_connection
-from .entities.User import User
+from src.database.database import get_connection
+from entities.User import User
 
 
 class UserModel():
